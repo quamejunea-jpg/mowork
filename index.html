@@ -1,0 +1,145 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>MoWork Ghana | Verified Local Service Marketplace</title> 
+    <!-- Tailwind CSS for modern layout infrastructure --> 
+    <script src="https://tailwindcss.com"></script> 
+    <link href="https://googleapis.com" rel="stylesheet"> 
+    <style>         body { font-family: 'Plus Jakarta Sans', sans-serif; } 
+    </style> 
+</head> 
+<body class="bg-slate-50 text-slate-900 scroll-smooth"> 
+ 
+    <!-- HEADER / NAVIGATION --> 
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> 
+        <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between"> 
+            <div class="flex items-center space-x-2"> 
+                <!-- Platform Visual Anchor Logo --> 
+                <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center font-bold text-white text-xl shadow-md shadow-indigo-200">Mo</div> 
+                <span class="text-xl font-bold tracking-tight text-slate-900">MoWork<span class="text-indigo-600">.gh</span></span> 
+            </div> 
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-600"> 
+                <a href="#how-it-works" class="hover:text-indigo-600 transition">How It Works</a>                 <a href="#trust" class="hover:text-indigo-600 transition">Trust & Safety</a> 
+                <a href="#pricing" class="hover:text-indigo-600 transition">Pricing Model</a> 
+            </nav> 
+            <div> 
+                <a href="#booking-form" class="bg-indigo-600 hover:bg-indigo-700 text-white fontsemibold px-5 py-2.5 rounded-xl shadow-lg shadow-indigo-100 transition inline-block textsm">Book Service</a> 
+            </div> 
+        </div> 
+    </header> 
+ 
+    <!-- HERO SECTION --> 
+    <section class="py-16 md:py-24 bg-gradient-to-b from-white to-slate-50 border-b borderslate-100"> 
+        <div class="max-w-4xl mx-auto px-4 text-center"> 
+            <!-- Phase 1 Location Tag --> 
+            <span class="inline-flex items-center bg-indigo-50 text-indigo-700 font-semibold px4 py-1.5 rounded-full text-xs uppercase tracking-wider mb-6"> 
+                  Exclusively Serving East Legon & Cantonments 
+            </span> 
+            <h1 class="text-4xl md:text-6xl font-bold text-slate-900 tracking-tight leading-tight mb-6"> 
+                Verified Home Artisans in Accra. <br class="hidden md:block"> 
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 toemerald-600">Booked in 60 Seconds.</span> 
+            </h1> 
+            <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leadingrelaxed"> 
+                Connect with highly skilled AC technicians, plumbers, and professional cleaners. Fully backed by a <span class="font-semibold text-slate-900">₵1,000 property protection guarantee</span>. 
+            </p> 
+             
+            <!-- Dual-Action Registration Pathways --> 
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mxauto"> 
+                <a href="#booking-form" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo700 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-indigo-200 transition textcenter"> 
+                    I Need an Artisan 
+                </a> 
+                <a href="#artisan-form" class="w-full sm:w-auto bg-white hover:bg-slate-50 textslate-800 font-bold px-8 py-4 rounded-xl border border-slate-200 shadow-sm transition text-center"> 
+                    I Want High-Paying Jobs 
+                </a> 
+            </div> 
+        </div> 
+    </section> 
+ 
+    <!-- TRUST & PROTECTION BANNER --> 
+    <section id="trust" class="py-12 bg-white border-b border-slate-200"> 
+        <div class="max-w-5xl mx-auto px-4"> 
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8"> 
+                <div class="flex items-start space-x-4"> 
+                    <div class="p-3 bg-emerald-50 rounded-xl text-emerald-600 font-bold">✓</div>                     <div> 
+                        <h4 class="font-bold text-slate-900 mb-1">Ghana Card Verified</h4> 
+                        <p class="text-sm text-slate-500">Every provider passes biometric identity screening before entering your home.</p> 
+                    </div> 
+                </div> 
+                <div class="flex items-start space-x-4"> 
+                    <div class="p-3 bg-indigo-50 rounded-xl text-indigo-600 font-bold">₵</div> 
+                    <div> 
+                        <h4 class="font-bold text-slate-900 mb-1">Secure MoMo Escrow</h4> 
+                        <p class="text-sm text-slate-500">Your funds sit safely locked. Artisans are paid instantly only when you release the code.</p> 
+                    </div> 
+                </div> 
+                <div class="flex items-start space-x-4"> 
+                    <div class="p-3 bg-amber-50 rounded-xl text-amber-600 font-bold"> </div> 
+                    <div> 
+                        <h4 class="font-bold text-slate-900 mb-1">₵1,000 Guarantee</h4> 
+                        <p class="text-sm text-slate-500">Relax knowing your structural property and home appliances are fully protected.</p> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+ 
+    <!-- DUAL FORM CONVERSION SECTION --> 
+    <section class="py-20 bg-slate-50"> 
+        <div class="max-w-6xl mx-auto px-4"> 
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12"> 
+                 
+                <!-- CLIENT BOOKING FORM GATEWAY --> 
+                <div id="booking-form" class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm"> 
+                    <div class="mb-6"> 
+                        <span class="text-xs font-bold uppercase tracking-wider text-indigo-600 bgindigo-50 px-3 py-1 rounded-md">For Customers</span> 
+                        <h3 class="text-2xl font-bold text-slate-900 mt-2">Hire a Verified Professional</h3> 
+                        <p class="text-sm text-slate-500 mt-1">Fill out your project needs below to receive quick matches within your neighborhood.</p> 
+                    </div> 
+                    <!-- Form actions simulate target endpoint hooks --> 
+                    <form class="space-y-4" onsubmit="event.preventDefault(); alert('Success! Your booking request has been loaded into the pilot database.');"> 
+                        <div> 
+                            <label class="block text-xs font-bold uppercase text-slate-600 mb-2">Full 
+Name</label> 
+                            <input type="text" placeholder="e.g. Kwame Mensah" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:borderindigo-600 transition text-sm"> 
+                        </div> 
+                        <div> 
+                            <label class="block text-xs font-bold uppercase text-slate-600 mb-
+2">WhatsApp Mobile Number</label> 
+                            <input type="tel" placeholder="e.g. 054 XXX XXXX" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:borderindigo-600 transition text-sm"> 
+                        </div> 
+                        <div> 
+                            <label class="block text-xs font-bold uppercase text-slate-600 mb-2">Accra Pilot Suburb</label> 
+                            <select required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-indigo-600 transition text-sm text-slate-600"> 
+                                <option value="">Select your location</option> 
+                                <option>East Legon</option> 
+                                <option>Cantonments</option> 
+                                <option>Airport Residential</option> 
+                                <option>Dzorwulu</option> 
+                            </select> 
+                        </div> 
+                        <div> 
+                            <label class="block text-xs font-bold uppercase text-slate-600 mb-2">Service Needed</label> 
+                            <select required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-indigo-600 transition text-sm text-slate-600"> 
+                                <option value="">Select required trade</option> 
+                                <option>AC & Air Conditioning Maintenance</option> 
+                                <option>Emergency Plumbing Fix</option> 
+                                <option>Deep Residential/Office Cleaning</option> 
+                            </select> 
+                        </div> 
+                        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 textwhite font-bold py-3.5 rounded-xl transition text-sm mt-2 shadow-lg shadow-indigo-100"> 
+                            Submit Booking Waitlist Request 
+                        </button> 
+                    </form> 
+                </div> 
+ 
+                <!-- ARTISAN REGISTRATION GATEWAY --> 
+                <div id="artisan-form" class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm"> 
+                    <div class="mb-6"> 
+                        <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 bgemerald-50 px-3 py-1 rounded-md">For Skilled Professionals</span> 
+                        <h3 class="text-2xl font-bold text-slate-900 mt-2">Get Reliable, High-Paying Jobs</h3> 
+                        <p class="text-sm text-slate-500 mt-1">Zero registration fees. Secure your payouts via our protected Mobile Money escrow rails.</p> 
+                    </div> 
+                    <form class="space-y-4" onsubmit="event.preventDefault(); alert('Application Received! We will text you on WhatsApp to schedule your Ghana Card validation interview.');"> 
+                        <div> 
