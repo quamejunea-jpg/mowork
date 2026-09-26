@@ -4,13 +4,15 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>MoWork Ghana | Verified Local Service Marketplace</title> 
-    <!-- Tailwind CSS CDN Engine Integration -->
+    
+    <!-- LIGHTWEIGHT TAILWIND CSS PLAY CDN (Loads instantly without slowing down mobile browsers) -->
     <script src="https://jsdelivr.net"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <!-- SYSTEM FONTS FALLBACK (Removes heavy external Google Font API downloads) -->
     <style> 
-        body { font-family: 'Plus Jakarta Sans', sans-serif; } 
+        body { 
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+        } 
     </style> 
 </head> 
 <body class="bg-slate-50 text-slate-900 scroll-smooth"> 
@@ -31,7 +33,7 @@
         </div> 
     </header> 
  
-    <!-- HERO CORE STRATEGY --> 
+    <!-- HERO SECTION --> 
     <section class="py-16 md:py-24 bg-gradient-to-b from-white to-slate-50 border-b border-slate-100"> 
         <div class="max-w-4xl mx-auto px-4 text-center"> 
             <span class="inline-flex items-center bg-indigo-50 text-indigo-700 font-semibold px-4 py-1.5 rounded-full text-xs uppercase tracking-wider mb-6"> 
@@ -70,7 +72,7 @@
                     <div class="p-3 bg-indigo-50 rounded-xl text-indigo-600 font-bold">₵</div> 
                     <div> 
                         <h4 class="font-bold text-slate-900 mb-1">Secure MoMo Escrow</h4> 
-                        <p class="text-sm text-slate-500">Your funds sit safely locked. Artisans are paid instantly only when you release the code.</p> 
+                        <p class="text-sm text-slate-500">Your funds sit safely locked. Artisans are paid instantly only when you release the verification code.</p> 
                     </div> 
                 </div> 
                 <div class="flex items-start space-x-4"> 
@@ -89,7 +91,7 @@
         <div class="max-w-6xl mx-auto px-4"> 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12"> 
                  
-                <!-- CLEAN CLIENT PORTAL --> 
+                <!-- CLIENT PORTAL --> 
                 <div id="booking-section" class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm flex flex-col justify-between"> 
                     <div class="mb-6"> 
                         <span class="text-xs font-bold uppercase tracking-wider text-indigo-600 bg-indigo-50 px-3 py-1 rounded-md">For Customers</span> 
@@ -98,7 +100,7 @@
                     </div> 
                     <!-- Wired to Tally Customer Waitlist ID: xXKLjk --> 
                     <div class="w-full min-h-[550px]"> 
-                        <iframe src="https://tally.so/r/xXKLjk" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0" title="MoWork Client Onboarding"></iframe> 
+                        <iframe src="https://tally.so" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0" title="MoWork Client Onboarding"></iframe> 
                     </div> 
                 </div> 
  
@@ -111,27 +113,34 @@
                     </div> 
                     <!-- Wired to Tally Artisan Registry ID: pba67q --> 
                     <div class="w-full min-h-[550px]"> 
-                        <iframe src="https://tally.so/r/pba67q" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0" title="MoWork Artisan Onboarding"></iframe> 
+                        <iframe src="https://tally.so" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0" title="MoWork Artisan Onboarding"></iframe> 
                     </div> 
                 </div> 
  
             </div> 
         </div> 
     </section> 
- 
-   <!-- FLOATING WHATSAPP BUTTON FOR ACCRA LOCAL CHAT SUPPORT --> 
-<a href="https://wa.me." 
-   target="_blank" 
-   class="fixed bottom-6 right-6 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all transform hover:scale-110 z-50" 
-   title="Chat on WhatsApp"> 
-    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"> 
-        <path d="M12.004 2c-5.51 0-9.993 4.483-9.993 9.997 0 1.763.459 3.484 1.33 5.004L2 22l5.132-1.347c1.472.802 3.125 1.226 4.868 1.226 5.51 0 9.997-4.486 9.997-10.001C22.001 6.483 17.514 2 12.004 2zm5.834 14.274c-.24.674-1.396 1.306-1.921 1.358-.456.046-.926.068-1.574-.127-.404-.121-.922-.296-1.516-.554-2.525-1.094-4.148-3.666-4.275-3.834-.126-.167-1.026-1.372-1.026-2.617 0-1.246.65-1.856.881-2.11.23-.254.502-.318.67-.318.168 0 .335.002.48.01.149.007.348-.056.545.422.203.493.695 1.706.755 1.83.06.124.1.267.017.433-.083.167-.124.267-.249.412-.124.146-.262.325-.375.437-.123.123-.252.257-.107.508.145.251.646 1.071 1.383 1.733.951.853 1.75 1.117 1.996 1.24.246.124.39.106.536-.063.146-.17.625-.733.791-.983.167-.25.334-.21.562-.125.228.085 1.442.684 1.691.81.25.124.417.186.48.293.062.107.062.618-.178 1.292z"/>
-    </svg> 
-</a>
 
- 
-</body> 
-</html>
+    <!-- STRATEGIC LEGAL, RIGHTS & LIABILITY COMPLIANCE FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 text-xs">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <h5 class="text-sm font-bold text-white mb-3">MoWork Ghana Escrow & Guarantee Notice</h5>
+                    <p class="leading-relaxed mb-4">
+                        All transaction booking payments made through the platform are held securely in a protected platform vault via authorized local payment infrastructure nodes. Funds are strictly released to the verified artisan upon structural token input by the client. The GH₵1,000 Property Protection Guarantee is only valid for work entirely documented, routed, and fully paid for directly inside our official platform layer. Offline negotiation completely voids all protections, warranties, and platform insurance access protocols.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-sm font-bold text-white mb-3">Artisan Status & Liability Disclaimer</h5>
+                    <p class="leading-relaxed">
+                        Artisans registered on MoWork Ghana are independent third-party contractors and are not formal direct corporate employees or legal agents of the platform. While comprehensive identity tracking and Ghana Card biometric verifications are performed, MoWork holds independent reserve pools for rapid damage isolation processing but does not assume direct liability for operational scheduling delay variants or contractor negligence. All user profiles are gathered and processed safely in structural alignment with local data privacy standards.
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col sm:flex-row items-center justify-between text-slate-500">
+                <p>&copy; 2026 MoWork Ghana. An Enterprise Initiative Platform Venture. All Rights Reserved.</p>
+
 
 
  
