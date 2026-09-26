@@ -8,37 +8,10 @@
     <!-- HIGH-SPEED STABLE CSS LAYOUT COMPILER -->
     <link rel="stylesheet" href="https://cloudflare.com">
     
-    <!-- BASELINE RENDERING COMPLIANCE RULES --> 
     <style> 
         body { 
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            margin: 0;
-            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
         } 
-        /* SYSTEM OVERRIDE RULE: Bypasses frame layer limits to lock button visibility */
-        .ultimate-helpline-anchor {
-            position: fixed !important;
-            bottom: 32px !important;
-            right: 32px !important;
-            background-color: #10b981 !important;
-            color: #ffffff !important;
-            padding: 14px 24px !important;
-            border-radius: 9999px !important;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2) !important;
-            display: inline-flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            z-index: 2147483647 !important; /* Forces layout rendering above all code elements */
-            text-decoration: none !important;
-            font-weight: 700 !important;
-            font-size: 15px !important;
-            border: 2px solid #ffffff !important;
-            transition: transform 0.2s ease-in-out !important;
-        }
-        .ultimate-helpline-anchor:hover {
-            background-color: #059669 !important;
-            transform: scale(1.05) !important;
-        }
     </style> 
 </head> 
 <body class="bg-gray-50 text-gray-900 antialiased"> 
@@ -50,11 +23,21 @@
                 <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center font-bold text-white text-xl shadow-md">Mo</div> 
                 <span class="text-xl font-bold tracking-tight text-gray-900">MoWork<span class="text-indigo-600">.gh</span></span> 
             </div> 
-            <nav class="hidden md:flex items-center space-x-8 font-medium text-gray-600"> 
-                <a href="#trust" class="hover:text-indigo-600 transition">Trust & Safety</a> 
+            
+            <!-- FIXED HELPLINE INTEGRATED DIRECTLY INTO NAVIGATION -->
+            <nav class="flex items-center space-x-6 font-semibold text-sm"> 
+                <a href="https://wa.me." 
+                   target="_blank" 
+                   class="text-green-600 hover:text-green-700 flex items-center bg-green-50 px-3 py-1.5 rounded-lg transition">
+                    <svg fill="currentColor" viewBox="0 0 24 24" class="w-4 h-4 mr-1.5 inline-block">
+                        <path d="M12.004 2c-5.51 0-9.993 4.483-9.993 9.997 0 1.763.459 3.484 1.33 5.004L2 22l5.132-1.347c1.472.802 3.125 1.226 4.868 1.226 5.51 0 9.997-4.486 9.997-10.001C22.001 6.483 17.514 2 12.004 2zm5.834 14.274c-.24.674-1.396 1.306-1.921 1.358-.456.046-.926.068-1.574-.127-.404-.121-.922-.296-1.516-.554-2.525-1.094-4.148-3.666-4.275-3.834-.126-.167-1.026-1.372-1.026-2.617 0-1.246.65-1.856.881-2.11.23-.254.502-.318.67-.318.168 0 .335.002.48.01.149.007.348-.056.545.422.203.493.695 1.706.755 1.83.06.124.1.267.017.433-.083.167-.124.267-.249.412-.124.146-.262.325-.375.437-.123.123-.252.257-.107.508.145.251.646 1.071 1.383 1.733.951.853 1.75 1.117 1.996 1.24.246.124.39.106.536-.063.146-.17.625-.733.791-.983.167-.25.334-.21.562-.125.228.085 1.442.684 1.691.81.25.124.417.186.48.293.062.107.062.618-.178 1.292z"/>
+                    </svg>
+                    24/7 Helpline
+                </a>
+                <a href="#trust" class="text-gray-600 hover:text-indigo-600 transition hidden sm:inline-block">Trust & Safety</a> 
             </nav> 
             <div> 
-                <a href="#booking-section" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-5 py-2.5 rounded-xl shadow-lg transition inline-block text-sm">Book Service</a> 
+                <a href="#booking-section" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-5 py-2.5 rounded-xl shadow-lg transition inline-block text-sm">Book Now</a> 
             </div> 
         </div> 
     </header> 
@@ -122,11 +105,11 @@
                     <div class="mb-6"> 
                         <span class="text-xs font-bold uppercase tracking-wider text-indigo-600 bg-indigo-50 px-3 py-1 rounded-md">For Customers</span> 
                         <h3 class="text-2xl font-bold text-gray-900 mt-2">Hire a Verified Professional</h3> 
-                        <p class="text-sm text-gray-500 mt-1 mb-4">Complete your booking details below. Your submission logs directly into our secure tracking sheet.</p> 
+                        <p class="text-sm text-gray-500 mt-1 mb-4">Complete your booking details below. Need instant phone support? <a href="https://wa.me" target="_blank" class="text-green-600 font-bold underline">Click here to chat with our Helpline</a>.</p> 
                     </div> 
                     <!-- Wired to Tally Customer Waitlist ID: xXKLjk --> 
                     <div class="w-full min-h-[550px]"> 
-                        <iframe src="https://tally.so" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0" title="MoWork Client Onboarding"></iframe> 
+                        <iframe src="https://tally.so/r/xXKLjk" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0" title="MoWork Client Onboarding"></iframe> 
                     </div> 
                 </div> 
  
@@ -139,7 +122,7 @@
                     </div> 
                     <!-- Wired to Tally Artisan Registry ID: pba67q --> 
                     <div class="w-full min-h-[550px]"> 
-                        <iframe src="https://tally.so" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0" title="MoWork Artisan Onboarding"></iframe> 
+                        <iframe src="https://tally.so/r/pba67q" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0" title="MoWork Artisan Onboarding"></iframe> 
                     </div> 
                 </div> 
  
@@ -147,15 +130,9 @@
         </div> 
     </section> 
 
-    <!-- STRATEGIC LEGAL, RIGHTS, LIABILITY & ACT 843 COMPLIANCE FOOTER -->
-    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800 text-xs">
+    <!-- GHANA DATA PROTECTION ACT 843 STATUTORY COMPLIANCE COMPONENT -->
+    <section class="py-12 bg-green-950 text-white border-t border-green-900">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-                <div>
-                    <h5 class="text-sm font-bold text-white mb-3">MoWork Ghana Escrow & Guarantee Notice</h5>
-                    <p class="leading-relaxed mb-4">
-                        All transaction booking payments made through the platform are held securely in a protected platform vault via authorized local payment infrastructure nodes. Funds are strictly released to the verified artisan upon structural token input by the client. The GH₵1,000 Property Protection Guarantee is only valid for work entirely documented, routed, and fully paid for directly inside our official platform layer. Offline negotiation completely voids all protections, warranties, and platform insurance access protocols.
-                    </p>
-                </div>
-                <div>
-
+            <div class="bg-green-900/40 p-6 rounded-2xl border border-green-800">
+                <h4 class="text-base font-bold text-green-400 mb-2">🛡️ Ghana Act 843 Statutory Compliance Framework</h4>
+                <p class="text-xs text-green-100 leading-relaxed">
